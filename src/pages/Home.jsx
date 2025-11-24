@@ -1,5 +1,6 @@
 import logo from "./assets/LOGOXP2.jpg";
 import perfil from "./assets/perfil.jpg";
+import QuestoesCarousel from "./components/QuestoesCarousel";
 
 function App() {
   return (
@@ -39,14 +40,13 @@ function App() {
       </section>
     </header>
 
-    <section className="flex justify-center items-center h-96 gap-96">
-      <div className="bg-yellow-500 w-72 h-40 flex items-center justify-center rounded-xl">
-        <h1 className="text-slate-200 font-bold text-2xl ">Map</h1>
-      </div>
+    <section className="flex justify-center items-start gap-14 py-10 px-6
+                    max-w-screen-xl mx-auto
+                    flex-col md:flex-row">
 
-      
+      <QuestoesCarousel />
+
       <div className="outline outline-yellow-500 w-80 min-h-44 rounded-2xl p-5 bg-white shadow-sm">
-
         <h2 className="text-xl font-semibold mb-3 text-gray-900">
           Missões
         </h2>
@@ -67,11 +67,10 @@ function App() {
             <span>Missão 3 — Desafio Prático</span>
           </li>
         </ul>
-
       </div>
 
-
     </section>
+
     
     <section className="flex justify-center items-center h-96 gap-96 ">
       <div className="bg-yellow-500 w-10/12 h-20 flex items-center justify-center rounded-xl">
