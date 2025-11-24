@@ -1,8 +1,11 @@
+import { useNavigate } from "react-router-dom";
 import logo from "./assets/LOGOXP2.jpg";
 import perfil from "./assets/perfil.jpg";
-import QuestoesCarousel from "./components/QuestoesCarousel";
+import MapPreview from "./components/MapPreview";
 
-function App() {
+function Home() {
+  const navigate = useNavigate();
+
   return (
     <body className="bg-slate-200">
       <header className="bg-black h-20 text-white sticky top-0 z-10">
@@ -44,7 +47,9 @@ function App() {
                     max-w-screen-xl mx-auto
                     flex-col md:flex-row">
 
-      <QuestoesCarousel />
+      <div className="w-full max-w-md">
+        <MapPreview />
+      </div>
 
       <div className="outline outline-yellow-500 w-80 min-h-44 rounded-2xl p-5 bg-white shadow-sm">
         <h2 className="text-xl font-semibold mb-3 text-gray-900">
@@ -93,4 +98,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
