@@ -1,16 +1,64 @@
-# React + Vite
+# TechCovenant – Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto está em desenvolvimento e tem como objetivo construir uma plataforma web com funcionalidades de **login**, **signup** e **sistema de questões**, utilizando tecnologias modernas no frontend e backend.
 
-Currently, two official plugins are available:
+## Status do Desenvolvimento
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Atualmente estão sendo implementados os seguintes módulos principais:
 
-## React Compiler
+### 1. Sistema de Autenticação
+A aplicação já possui telas e lógica inicial para:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Signup (criação de conta)**
+  - Validação de senha e confirmação
+  - Envio de dados para a API em JSON
+  - Tratamento de erros de resposta
+  - Redirecionamento para login após cadastro bem-sucedido
 
-## Expanding the ESLint configuration
+- **Login (em desenvolvimento)**
+  - Tela criada
+  - Conexão com API será adicionada em seguida
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+A integração é feita utilizando `fetch` diretamente para a API hospedada no Render.
+
+### 2. Página de Questões (em desenvolvimento)
+Após finalizar o fluxo de autenticação, será iniciada a construção do módulo de questões:
+
+- Exibição de questões
+- Sistema de respostas
+- Lógica de progresso
+- Comunicação com backend para armazenar resultados
+
+## Tecnologias Utilizadas
+
+### Frontend
+- React.js
+- TailwindCSS
+- React Router DOM
+- Fetch API
+- Componentes funcionais e Hooks
+
+### Backend
+- API em desenvolvimento (Node.js ou FastAPI)
+- Banco PostgreSQL
+- Hospedagem via Render
+
+## Estrutura Atual do Projeto
+
+/src
+├── pages
+│ ├── Login.jsx
+│ └── Signup.jsx
+├── components
+├── App.jsx
+└── main.jsx
+
+
+## Próximos Passos
+
+- Finalizar fluxo completo do login
+- Implementar sistema de autenticação com token
+- Criar módulo de questões
+- Adicionar validações mais robustas
+- Melhorar usabilidade e interface
+
